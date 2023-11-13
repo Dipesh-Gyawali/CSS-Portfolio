@@ -1,0 +1,82 @@
+.about{
+    display: flex;
+    justify-content: space-around;
+    gap: 5em;
+
+}
+.about__content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1em;
+}
+.about__title{
+    font-size:  var(--size-5xl);
+    font-weight: 800;
+}
+.about__description{
+    max-width: 60ch;
+    font-size: var(--size-xl);
+    color: var(--clr-slate600);
+}
+.about__line{
+    border-color: var(--clr-slate800);
+}
+.about__subtitle{
+    font-size: var(--size-2xl);
+    color: var(--clr-slate400);
+}
+.about__ul-container{
+    display: flex;
+}
+.about__ul{
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;    /* 50-50 li vaneko */
+
+    gap: 1em;
+    list-style-type: '\1F44D';
+    padding-left: 1em;
+
+}
+.about__list{
+    font-size: var(--size-xl);
+    color: var(--clr-slate600);
+
+}
+.about__list::before{
+    content: "";
+    margin-left: 0.5rem;
+}
+.about__img{
+    margin-top: 10%;
+}
+/* md */
+@media (max-width: 768px) {
+    .about__img{
+        margin-top: 25%;
+    }
+}
+/* sm */
+@media (max-width: 640px) {
+    .about__img{
+        margin-top: 50%;
+    }
+}
+/* xs */
+@media (max-width: 500px) {
+    .about{
+        flex-direction: column;
+    }
+    .about__img{
+        margin: 0 auto; /* center ma parxa*/
+    }
+
+}
+
+
+
+
+
+
+
